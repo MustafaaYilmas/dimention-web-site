@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "features": "Özellikler",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "badge": "Premium iOS Geliştirme",
+    "title": "Fikirlerinizi Olağanüstü",
+    "titleHighlight": "iOS Uygulamalarına Dönüştürün",
+    "description": "Markanızı yükseltecek ve kullanıcılarınızı etkileyecek premium, yenilikçi mobil deneyimler yaratıyoruz.",
+    "startProject": "Projenizi Başlatın",
+    "exploreWork": "Çalışmalarımızı Keşfedin",
+    "stats": {
+      "appsDelivered": "Teslim Edilen Uygulama",
+      "clientSatisfaction": "Müşteri Memnuniyeti",
+      "downloads": "İndirme Sayısı"
+    }
+  },
+  "features": {
+    "title": "Neden",
+    "titleHighlight": "Dimention",
+    "description": "App Store'da öne çıkan iOS uygulamaları sunmak için teknik mükemmelliği yaratıcı yenilikle birleştiriyoruz.",
+    "cta": {
+      "title": "Harika Bir Şey İnşa Etmeye Hazır Mısınız?",
+      "description": "Vizyonunuzu premium bir iOS uygulamasına nasıl dönüştürebileceğimizi konuşalım.",
+      "button": "Bugün Başlayın"
+    },
+    "items": {
+      "performance": {
+        "title": "Yerli Performans",
+        "description": "En iyi performans ve kullanıcı deneyimi için Swift ve en yeni iOS teknolojileriyle geliştirilmiştir."
+      },
+      "design": {
+        "title": "Muhteşem Tasarım",
+        "description": "Apple Human Interface Guidelines'ı takip ederken benzersiz marka kimliğinizi koruyan piksel mükemmelliğinde arayüzler."
+      },
+      "speed": {
+        "title": "Şimşek Hızında",
+        "description": "Optimize edilmiş kod ve verimli algoritmalar, uygulamanızın tüm iOS cihazlarda sorunsuz çalışmasını sağlar."
+      },
+      "security": {
+        "title": "Güvenli ve Gizli",
+        "description": "Uçtan uca şifreleme ve gizlilik odaklı geliştirme yaklaşımı ile kurumsal düzeyde güvenlik."
+      },
+      "userCentric": {
+        "title": "Kullanıcı Odaklı",
+        "description": "Kapsamlı kullanıcı araştırması ve yinelemeli testlere dayanan sezgisel UX tasarımı."
+      },
+      "crossDevice": {
+        "title": "Çapraz Cihaz",
+        "description": "iPhone, iPad, Apple Watch ve diğer Apple ekosistem cihazlarında kesintisiz deneyim."
+      }
+    }
+  },
+  "about": {
+    "title": "Dijital Mükemmellik",
+    "titleHighlight": "İlk Günden Beri",
+    "description1": "Dimention App Studio'da sadece geliştirici değiliz - kullanıcı beklentilerini yeniden tanımlayan iOS uygulamaları yaratmaya adanmış dijital ustalarız. Ekibimiz, gerçekten önemli olan çözümler sunmak için yıllarca deneyimi yenilik tutkusuyla birleştiriyor.",
+    "description2": "Startup'lardan kurumsal müşterilere kadar, işletmelerin fikirlerini güçlü mobil deneyimlere dönüştürmelerine yardımcı olduk. Her proje, iOS'ta mümkün olanın sınırlarını zorlama fırsatıdır.",
+    "values": {
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her kod satırında ve tasarım pikselinde mükemmellik için çabalıyoruz."
+      },
+      "innovation": {
+        "title": "Yenilik",
+        "description": "En yeni teknolojiler ve yaratıcı çözümlerle sınırları zorluyoruz."
+      },
+      "passion": {
+        "title": "Tutku",
+        "description": "Gerçek bir fark yaratan uygulamalar yaratmaya derinden bağlıyız."
+      },
+      "growth": {
+        "title": "Büyüme",
+        "description": "İşletmelerin mobil öncelikli dünyada ölçeklenmesine ve başarılı olmasına yardımcı oluyoruz."
+      }
+    },
+    "process": {
+      "title": "Sürecimiz",
+      "step1": {
+        "title": "Keşif ve Strateji",
+        "description": "Vizyonunuzu, hedeflerinizi ve hedef kitlenizi anlama."
+      },
+      "step2": {
+        "title": "Tasarım ve Prototip",
+        "description": "Kullanıcıların sevdiği güzel, sezgisel arayüzler yaratma."
+      },
+      "step3": {
+        "title": "Geliştirme ve Test",
+        "description": "Temiz, sürdürülebilir kod ile güçlü uygulamalar inşa etme."
+      },
+      "step4": {
+        "title": "Başlatma ve Destek",
+        "description": "Sorunsuz dağıtım ve sürekli bakım."
+      }
+    }
+  },
+  "contact": {
+    "title": "Harika Bir Şey",
+    "titleHighlight": "Yaratalım",
+    "description": "Fikrinizi gerçeğe dönüştürmeye hazır mısınız? Projenizi görüşmek için ekibimizle iletişime geçin.",
+    "form": {
+      "title": "Bize mesaj gönderin",
+      "name": "Adınız",
+      "namePlaceholder": "Ahmet Yılmaz",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "ahmet@example.com",
+      "company": "Şirket (İsteğe bağlı)",
+      "companyPlaceholder": "Şirketiniz",
+      "message": "Proje Detayları",
+      "messagePlaceholder": "Projeniz hakkında bilgi verin...",
+      "submit": "Mesaj Gönder",
+      "successMessage": "Mesajınız için teşekkürler! En kısa sürede size dönüş yapacağız."
+    },
+    "info": {
+      "title": "İletişime geçin",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "office": "Ofis",
+      "location": "San Francisco, CA\nAmerika Birleşik Devletleri"
+    },
+    "quickResponse": {
+      "title": "Hızlı Yanıt Süresi",
+      "description": "Genellikle tüm sorgulara 24 saat içinde yanıt veriyoruz. Acil durumlar için lütfen bizi doğrudan arayın.",
+      "features": [
+        "Ücretsiz danışma",
+        "Proje zaman çizelgesi tahmini",
+        "Bütçe önerileri"
+      ]
+    }
+  },
+  "footer": {
+    "description": "Markanızı yükselten ve kullanıcılarınızı mutlu eden premium iOS uygulamaları yaratıyoruz.",
+    "company": "Şirket",
+    "services": "Hizmetler",
+    "support": "Destek",
+    "links": {
+      "aboutUs": "Hakkımızda",
+      "ourProcess": "Sürecimiz",
+      "caseStudies": "Başarı Hikayeleri",
+      "blog": "Blog",
+      "iosDevelopment": "iOS Geliştirme",
+      "uiuxDesign": "UI/UX Tasarım",
+      "appMaintenance": "Uygulama Bakımı",
+      "consulting": "Danışmanlık",
+      "contact": "İletişim",
+      "faq": "SSS",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları"
+    },
+    "copyright": "© {{year}} Dimention App Studio. Tüm hakları saklıdır.",
+    "madeWith": "ile yapıldı",
+    "in": "San Francisco'da"
+  }
+}

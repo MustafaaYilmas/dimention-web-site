@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Premium iOS Development",
+    "title": "Transform Your Ideas Into",
+    "titleHighlight": "Exceptional iOS Apps",
+    "description": "We craft premium, innovative mobile experiences that elevate your brand and delight your users.",
+    "startProject": "Start Your Project",
+    "exploreWork": "Explore Our Work",
+    "stats": {
+      "appsDelivered": "Apps Delivered",
+      "clientSatisfaction": "Client Satisfaction",
+      "downloads": "Downloads"
+    }
+  },
+  "features": {
+    "title": "Why Choose",
+    "titleHighlight": "Dimention",
+    "description": "We combine technical excellence with creative innovation to deliver iOS apps that stand out in the App Store.",
+    "cta": {
+      "title": "Ready to Build Something Amazing?",
+      "description": "Let's discuss how we can transform your vision into a premium iOS application.",
+      "button": "Get Started Today"
+    },
+    "items": {
+      "performance": {
+        "title": "Native Performance",
+        "description": "Built with Swift and cutting-edge iOS technologies for optimal performance and user experience."
+      },
+      "design": {
+        "title": "Stunning Design",
+        "description": "Pixel-perfect interfaces that follow Apple Human Interface Guidelines while maintaining unique brand identity."
+      },
+      "speed": {
+        "title": "Lightning Fast",
+        "description": "Optimized code and efficient algorithms ensure your app runs smoothly on all iOS devices."
+      },
+      "security": {
+        "title": "Secure & Private",
+        "description": "Enterprise-grade security with end-to-end encryption and privacy-first development approach."
+      },
+      "userCentric": {
+        "title": "User-Centric",
+        "description": "Intuitive UX design based on extensive user research and iterative testing."
+      },
+      "crossDevice": {
+        "title": "Cross-Device",
+        "description": "Seamless experience across iPhone, iPad, Apple Watch, and other Apple ecosystem devices."
+      }
+    }
+  },
+  "about": {
+    "title": "Crafting Digital Excellence",
+    "titleHighlight": "Since Day One",
+    "description1": "At Dimention App Studio, we're more than just developers – we're digital craftsmen dedicated to creating iOS applications that redefine user expectations. Our team combines years of expertise with a passion for innovation to deliver solutions that truly matter.",
+    "description2": "From startups to enterprise clients, we've helped businesses transform their ideas into powerful mobile experiences. Every project is an opportunity to push the boundaries of what's possible on iOS.",
+    "values": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for perfection in every line of code and pixel of design."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Pushing boundaries with cutting-edge technologies and creative solutions."
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Deeply committed to creating apps that make a real difference."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Helping businesses scale and succeed in the mobile-first world."
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "step1": {
+        "title": "Discovery & Strategy",
+        "description": "Understanding your vision, goals, and target audience."
+      },
+      "step2": {
+        "title": "Design & Prototype",
+        "description": "Creating beautiful, intuitive interfaces that users love."
+      },
+      "step3": {
+        "title": "Development & Testing",
+        "description": "Building robust apps with clean, maintainable code."
+      },
+      "step4": {
+        "title": "Launch & Support",
+        "description": "Seamless deployment and ongoing maintenance."
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Create Something",
+    "titleHighlight": "Amazing",
+    "description": "Ready to transform your idea into reality? Get in touch with our team to discuss your project.",
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "company": "Company (Optional)",
+      "companyPlaceholder": "Your Company",
+      "message": "Project Details",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "successMessage": "Thank you for your message! We'll get back to you soon."
+    },
+    "info": {
+      "title": "Get in touch",
+      "email": "Email",
+      "phone": "Phone",
+      "office": "Office",
+      "location": "San Francisco, CA\nUnited States"
+    },
+    "quickResponse": {
+      "title": "Quick Response Time",
+      "description": "We typically respond to all inquiries within 24 hours. For urgent matters, please call us directly.",
+      "features": [
+        "Free consultation",
+        "Project timeline estimation",
+        "Budget recommendations"
+      ]
+    }
+  },
+  "footer": {
+    "description": "Crafting premium iOS applications that elevate your brand and delight your users.",
+    "company": "Company",
+    "services": "Services",
+    "support": "Support",
+    "links": {
+      "aboutUs": "About Us",
+      "ourProcess": "Our Process",
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "iosDevelopment": "iOS Development",
+      "uiuxDesign": "UI/UX Design",
+      "appMaintenance": "App Maintenance",
+      "consulting": "Consulting",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© {{year}} Dimention App Studio. All rights reserved.",
+    "madeWith": "Made with",
+    "in": "in San Francisco"
+  }
+}
