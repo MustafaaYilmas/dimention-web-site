@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Dimention App Studio - Premium iOS Geliştirme",
+    "description": "Fikirlerinizi olağanüstü iOS uygulamalarına dönüştürün. Birinci sınıf mobil uygulama geliştirme, en son tasarım ve teknoloji ile."
+  },
   "nav": {
     "home": "Ana Sayfa",
     "features": "Özellikler",

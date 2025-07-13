@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Dimention App Studio - Premium iOS Development",
+    "description": "Transform your ideas into exceptional iOS applications. Premium mobile app development with cutting-edge design and technology."
+  },
   "nav": {
     "home": "Home",
     "features": "Features",

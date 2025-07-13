@@ -1,7 +1,9 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
@@ -11,9 +13,24 @@ const Footer = () => {
   ];
 
   const footerLinks = {
-    Company: ['About Us', 'Our Process', 'Case Studies', 'Blog'],
-    Services: ['iOS Development', 'UI/UX Design', 'App Maintenance', 'Consulting'],
-    Support: ['Contact', 'FAQ', 'Privacy Policy', 'Terms of Service'],
+    [t('footer.company')]: [
+      t('footer.links.aboutUs'),
+      t('footer.links.ourProcess'),
+      t('footer.links.caseStudies'),
+      t('footer.links.blog')
+    ],
+    [t('footer.services')]: [
+      t('footer.links.iosDevelopment'),
+      t('footer.links.uiuxDesign'),
+      t('footer.links.appMaintenance'),
+      t('footer.links.consulting')
+    ],
+    [t('footer.support')]: [
+      t('footer.links.contact'),
+      t('footer.links.faq'),
+      t('footer.links.privacy'),
+      t('footer.links.terms')
+    ],
   };
 
   return (
@@ -23,7 +40,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Dimention</h3>
             <p className="text-gray-400">
-              Crafting premium iOS applications that elevate your brand and delight your users.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -61,10 +78,10 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Dimention App Studio. All rights reserved.
+              {t('footer.copyright', { year: currentYear })}
             </p>
             <p className="text-gray-400 text-sm flex items-center gap-1">
-              Made with <Heart size={16} className="text-red-500" /> in San Francisco
+              {t('footer.madeWith')} <Heart size={16} className="text-red-500" /> {t('footer.in')}
             </p>
           </div>
         </div>

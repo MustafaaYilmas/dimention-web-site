@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -7,6 +8,22 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const { t, i18n } = useTranslation();
+  
+  // Update document title and meta description when language changes
+  useEffect(() => {
+    document.title = t('meta.title');
+    
+    // Update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = t('meta.description');
+  }, [t, i18n.language]);
+  
   useEffect(() => {
     const observerOptions = {
       root: null,

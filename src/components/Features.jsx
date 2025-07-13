@@ -1,37 +1,39 @@
 import React from 'react';
 import { Code2, Palette, Zap, Shield, Users, Smartphone } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: Code2,
-      title: 'Yerli Performans',
-      description: 'En iyi performans ve kullanıcı deneyimi için Swift ve en yeni iOS teknolojileriyle geliştirilmiştir.',
+      title: t('features.items.performance.title'),
+      description: t('features.items.performance.description'),
     },
     {
       icon: Palette,
-      title: 'Muhteşem Tasarım',
-      description: "Apple Human Interface Guidelines'ı takip ederken benzersiz marka kimliğinizi koruyan piksel mükemmeliğinde arayüzler.",
+      title: t('features.items.design.title'),
+      description: t('features.items.design.description'),
     },
     {
       icon: Zap,
-      title: 'Şimşek Hızında',
-      description: 'Optimize edilmiş kod ve verimli algoritmalar, uygulamanızın tüm iOS cihazlarda sorunsuz çalışmasını sağlar.',
+      title: t('features.items.speed.title'),
+      description: t('features.items.speed.description'),
     },
     {
       icon: Shield,
-      title: 'Güvenli ve Gizli',
-      description: 'Uçtan uca şifreleme ve gizlilik odaklı geliştirme yaklaşımı ile kurumsal düzeyde güvenlik.',
+      title: t('features.items.security.title'),
+      description: t('features.items.security.description'),
     },
     {
       icon: Users,
-      title: 'Kullanıcı Odaklı',
-      description: 'Kapsamlı kullanıcı araştırması ve yinelemeli testlere dayanan sezgisel UX tasarımı.',
+      title: t('features.items.userCentric.title'),
+      description: t('features.items.userCentric.description'),
     },
     {
       icon: Smartphone,
-      title: 'Çapraz Cihaz',
-      description: 'iPhone, iPad, Apple Watch ve diğer Apple ekosistem cihazlarında kesintisiz deneyim.',
+      title: t('features.items.crossDevice.title'),
+      description: t('features.items.crossDevice.description'),
     },
   ];
 
@@ -40,10 +42,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Neden <span className="gradient-text">Dimention</span>
+            {t('features.title')} <span className="gradient-text">{t('features.titleHighlight')}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            App Store'da öne çıkan iOS uygulamaları sunmak için teknik mükemmelliği yaratıcı yenilikle birleştiriyoruz.
+            {t('features.description')}
           </p>
         </div>
 
@@ -68,13 +70,13 @@ const Features = () => {
 
         <div className="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 text-center">
           <h3 className="text-3xl font-bold text-white mb-4">
-            Harika Bir Şey İnşa Etmeye Hazır Mısınız?
+            {t('features.cta.title')}
           </h3>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Vizyonunuzu premium bir iOS uygulamasına nasıl dönüştürebileceğimizi konuşalım.
+            {t('features.cta.description')}
           </p>
           <a href="#contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
-Bugün Başlayın
+{t('features.cta.button')}
           </a>
         </div>
       </div>
