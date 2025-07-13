@@ -9,7 +9,7 @@
   }
   
   body {
-    @apply antialiased;
+    @apply antialiased overflow-x-hidden;
   }
 }
 
@@ -23,10 +23,16 @@
   }
   
   .btn-primary {
-    @apply px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95;
+    @apply px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 text-sm sm:text-base;
   }
   
   .btn-secondary {
-    @apply px-8 py-4 bg-white text-primary-600 rounded-full font-semibold border-2 border-primary-600 transition-all duration-300 hover:bg-primary-600 hover:text-white hover:shadow-xl hover:scale-105 active:scale-95;
+    @apply px-6 py-3 sm:px-8 sm:py-4 bg-white text-primary-600 rounded-full font-semibold border-2 border-primary-600 transition-all duration-300 hover:bg-primary-600 hover:text-white hover:shadow-xl hover:scale-105 active:scale-95 text-sm sm:text-base;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-primary, .btn-secondary {
+    @apply min-h-[44px];
   }
 }

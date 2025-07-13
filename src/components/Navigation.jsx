@@ -29,9 +29,9 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 flex items-center gap-3">
-            <img src="/logo.png" alt="Dimention" className="w-10 h-10" />
-            <h1 className={`text-2xl font-bold ${
+          <div className="flex-shrink-0 flex items-center gap-2 sm:gap-3">
+            <img src="/logo.png" alt="Dimention" className="w-8 h-8 sm:w-10 sm:h-10" />
+            <h1 className={`text-xl sm:text-2xl font-bold ${
               isScrolled ? 'text-primary-600' : 'text-white'
             }`}>
               Dimention
@@ -71,7 +71,7 @@ const Navigation = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md">
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <a

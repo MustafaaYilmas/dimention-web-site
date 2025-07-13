@@ -29,21 +29,21 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {t('contact.title')} <span className="gradient-text">{t('contact.titleHighlight')}</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {t('contact.description')}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
           <div>
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">{t('contact.form.title')}</h3>
+            <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">{t('contact.form.title')}</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     {t('contact.form.name')}
                   </label>
                   <input
@@ -53,12 +53,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-sm sm:text-base"
                     placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     {t('contact.form.email')}
                   </label>
                   <input
@@ -68,12 +68,12 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-sm sm:text-base"
                     placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     {t('contact.form.company')}
                   </label>
                   <input
@@ -82,12 +82,12 @@ const Contact = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-sm sm:text-base"
                     placeholder={t('contact.form.companyPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     {t('contact.form.message')}
                   </label>
                   <textarea
@@ -97,7 +97,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none text-sm sm:text-base"
                     placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
@@ -114,7 +114,7 @@ const Contact = () => {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">{t('contact.info.title')}</h3>
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">{t('contact.info.title')}</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -122,7 +122,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{t('contact.info.email')}</h4>
-                    <p className="text-gray-600">hello@dimentionapp.studio</p>
+                    <p className="text-sm sm:text-base text-gray-600 break-all">hello@dimentionapp.studio</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -131,7 +131,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{t('contact.info.phone')}</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-sm sm:text-base text-gray-600">+1 (555) 123-4567</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -140,7 +140,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{t('contact.info.office')}</h4>
-                    <p className="text-gray-600">{t('contact.info.location').split('\n').map((line, i) => (
+                    <p className="text-sm sm:text-base text-gray-600">{t('contact.info.location').split('\n').map((line, i) => (
                       <React.Fragment key={i}>{line}{i === 0 && <br />}</React.Fragment>
                     ))}</p>
                   </div>
@@ -148,9 +148,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-8 text-white">
-              <h4 className="text-2xl font-semibold mb-4">{t('contact.quickResponse.title')}</h4>
-              <p className="mb-6">
+            <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-6 sm:p-8 text-white">
+              <h4 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{t('contact.quickResponse.title')}</h4>
+              <p className="text-sm sm:text-base mb-4 sm:mb-6">
                 {t('contact.quickResponse.description')}
               </p>
               <div className="space-y-3">
@@ -158,19 +158,19 @@ const Contact = () => {
                   <div className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <span>{t('contact.quickResponse.features.0')}</span>
+                  <span className="text-sm sm:text-base">{t('contact.quickResponse.features.0')}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <span>{t('contact.quickResponse.features.1')}</span>
+                  <span className="text-sm sm:text-base">{t('contact.quickResponse.features.1')}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <span>{t('contact.quickResponse.features.2')}</span>
+                  <span className="text-sm sm:text-base">{t('contact.quickResponse.features.2')}</span>
                 </div>
               </div>
             </div>
