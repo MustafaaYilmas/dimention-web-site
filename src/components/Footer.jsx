@@ -1,35 +1,30 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   
-  const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Github, href: '#', label: 'GitHub' },
-  ];
 
   const footerLinks = {
     [t('footer.company')]: [
-      t('footer.links.aboutUs'),
-      t('footer.links.ourProcess'),
-      t('footer.links.caseStudies'),
-      t('footer.links.blog')
+      { name: t('footer.links.aboutUs'), href: '#' },
+      { name: t('footer.links.ourProcess'), href: '#' },
+      { name: t('footer.links.caseStudies'), href: '#' },
+      { name: t('footer.links.blog'), href: '#' }
     ],
     [t('footer.services')]: [
-      t('footer.links.iosDevelopment'),
-      t('footer.links.uiuxDesign'),
-      t('footer.links.appMaintenance'),
-      t('footer.links.consulting')
+      { name: t('footer.links.iosDevelopment'), href: '#' },
+      { name: t('footer.links.uiuxDesign'), href: '#' },
+      { name: t('footer.links.appMaintenance'), href: '#' },
+      { name: t('footer.links.consulting'), href: '#' }
     ],
     [t('footer.support')]: [
-      t('footer.links.contact'),
-      t('footer.links.faq'),
-      t('footer.links.privacy'),
-      t('footer.links.terms')
+      { name: t('footer.links.contact'), href: '#contact' },
+      { name: t('footer.links.faq'), href: '#' },
+      { name: t('footer.links.privacy'), href: '/privacy' },
+      { name: t('footer.links.terms'), href: '/terms' }
     ],
   };
 
@@ -42,17 +37,6 @@ const Footer = () => {
             <p className="text-sm sm:text-base text-gray-400">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
-                  <social.icon size={18} className="sm:w-5 sm:h-5" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {Object.entries(footerLinks).map(([category, links]) => (
@@ -60,12 +44,20 @@ const Footer = () => {
               <h4 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">{category}</h4>
               <ul className="space-y-2">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors">
-                      {link}
-                    </a>
+                  <li key={link.name}>
+                    {link.href.startsWith('/') ? (
+                      <Link
+                        to={link.href}
+                        className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors">
+                        {link.name}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors">
+                        {link.name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -77,9 +69,6 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-xs sm:text-sm text-gray-400 text-center md:text-left">
               {t('footer.copyright', { year: currentYear })}
-            </p>
-            <p className="text-xs sm:text-sm text-gray-400 flex items-center gap-1 justify-center md:justify-start">
-              {t('footer.madeWith')} <Heart size={16} className="text-red-500" /> {t('footer.in')}
             </p>
           </div>
         </div>

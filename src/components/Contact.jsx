@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
@@ -20,8 +20,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert(t('contact.form.successMessage'));
+    
+    // Prepare email content
+    const subject = `New Contact Form Submission from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`;
+    
+    // Create Gmail compose URL
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info@dimention.app&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open Gmail in new tab
+    window.open(gmailUrl, '_blank');
+    
+    // Clear form
     setFormData({ name: '', email: '', company: '', message: '' });
   };
 
@@ -122,16 +132,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{t('contact.info.email')}</h4>
-                    <p className="text-sm sm:text-base text-gray-600 break-all">hello@dimentionapp.studio</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t('contact.info.phone')}</h4>
-                    <p className="text-sm sm:text-base text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-sm sm:text-base text-gray-600 break-all">info@dimention.app</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

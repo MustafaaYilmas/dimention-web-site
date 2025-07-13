@@ -123,7 +123,7 @@
       "email": "E-posta",
       "phone": "Telefon",
       "office": "Ofis",
-      "location": "San Francisco, CA\nAmerika Birleşik Devletleri"
+      "location": "Evliya Çelebi Mahallesi\nIKSV NO:5/2 Beyoğlu İstanbul"
     },
     "quickResponse": {
       "title": "Hızlı Yanıt Süresi",
@@ -156,6 +156,6 @@
     },
     "copyright": "© {{year}} Dimention App Studio. Tüm hakları saklıdır.",
     "madeWith": "ile yapıldı",
-    "in": "San Francisco'da"
+    "in": ""
   }
 }
